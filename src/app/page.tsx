@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import HeroBanner from "@/components/home/hero/HeroBanner";
 import MarqueeLogos from "@/components/home/marquees/MarqueeLogos";
 import ScrollingText from "@/components/home/scrollingtext/ScrollingText";
 import Predefine from "@/components/home/predefine/predefine";
@@ -13,6 +14,7 @@ import Designed from "@/components/home/designed/DesignedSpacesHero";
 export default function Home() {
   return (
     <div className={styles.page}>
+      <HeroBanner />
       <MarqueeLogos />
       <ScrollingText />
       <Predefine />

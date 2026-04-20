@@ -52,7 +52,7 @@
 /* ── Center: tagline ───────────────────────── */
 .tagline {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: clamp(0.82rem, 1vw, 0.95rem);
+  font-size: clamp(0.82rem, 1vw, 1.125rem);
   line-height: 1.65;
   color: #1a1a1a;
 }

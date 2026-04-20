@@ -123,7 +123,7 @@
 }
 
 /* CTA */
-.ctaBtn {
+/* .ctaBtn {
   display: inline-flex;
   align-items: center;
   gap: 14px;
@@ -157,6 +157,53 @@
   font-size: 1rem;
   font-weight: 700;
   flex-shrink: 0;
+} */
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 1px 1px 1px 26px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.15s ease;
+  width: fit-content;
+}
+
+.ctaBtn:hover {
+  background: #333333;
+  transform: scale(1.02);
+}
+
+.ctaBtn:active {
+  transform: scale(0.98);
+}
+
+.ctaArrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  color: #1a1a1a;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.ctaBtn:hover .ctaArrow {
+  background: #f0f0f0;
 }
 
 /* ─────────────────────────────────────────────

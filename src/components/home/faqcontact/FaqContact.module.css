@@ -232,40 +232,50 @@
 .submitBtn {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between; /* ✅ pushes arrow to right */
-  width: 220px; /* ✅ longer pill like image */
-  padding: 6px 6px 6px 20px; /* tighter inside */
+  gap: 14px;
+  padding: 1px 1px 1px 26px; /* same as cta */
   background: #f3f3f3;
   color: #1a1a1a;
-  border-radius: 999px;
+  border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
   border: none;
+  width: fit-content; /* ✅ prevents stretching */
+  white-space: nowrap;
   transition: all 0.25s ease;
+  min-width: 150px;
+  justify-content: space-between;
+
 }
 
 /* Hover */
 .submitBtn:hover {
   background: #e9e6df;
+  transform: scale(1.02);
 }
 
-/* Arrow circle */
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
 .submitArrow {
-  width: 38px;
-  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
   background: #1a1a1a;
   color: #ffffff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.9rem;
+  flex-shrink: 0;
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
-/* Arrow hover animation */
+/* Hover animation */
 .submitBtn:hover .submitArrow {
-  transform: translateX(4px); /* subtle movement */
+  transform: translateX(0.5px);
   background: #000;
 }
 
